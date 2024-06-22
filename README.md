@@ -32,23 +32,31 @@ L'objectif principal de ce projet est de développer un modèle de prédiction p
 
 ## Technologies Utilisées
 
+## Technologies Utilisées
+
 ### Backend :
 
-- [![Flask Logo](https://www.fullstackpython.com/img/logos/flask.jpg)](https://flask.palletsprojects.com/) **Flask :** Framework web pour la création de l'interface utilisateur.
-- [![SQLAlchemy Logo](https://www.fullstackpython.com/img/logos/sqlalchemy.jpg)](https://www.sqlalchemy.org/) **SQLAlchemy :** ORM pour la gestion des bases de données.
-- [![Pickle Logo](https://upload.wikimedia.org/wikipedia/commons/4/4f/Pickle_logo.jpg)](https://docs.python.org/3/library/pickle.html) **Pickle :** Pour le chargement des modèles de Machine Learning.
-- [![Scikit-learn Logo](https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png)](https://scikit-learn.org/stable/) **Scikit-learn :** Bibliothèque de Machine Learning utilisée pour la construction des modèles.
-
+- ![Flask](https://img.shields.io/badge/-Flask-black?style=flat-square&logo=flask) **Flask :** Framework web pour la création de l'interface utilisateur.
+- ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-black?style=flat-square&logo=sqlalchemy) **SQLAlchemy :** ORM pour la gestion des bases de données.
+- ![Pickle](https://img.shields.io/badge/-Pickle-black?style=flat-square&logo=pickle) **Pickle :** Pour le chargement des modèles de Machine Learning.
+- ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-black?style=flat-square&logo=scikit-learn) **Scikit-learn :** Bibliothèque de Machine Learning utilisée pour la construction des modèles.
 
 ### Frontend :
 
-- **HTML/CSS :** Pour la création de l'interface utilisateur.
-- **Matplotlib & Seaborn :** Pour la visualisation des données.
+- ![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5) **HTML/CSS :** Pour la création de l'interface utilisateur.
+- ![Matplotlib](https://img.shields.io/badge/-Matplotlib-black?style=flat-square&logo=python) **Matplotlib :** Pour la visualisation des données.
+- ![Seaborn](https://img.shields.io/badge/-Seaborn-black?style=flat-square&logo=python) **Seaborn :** Pour la visualisation des données.
+- ![Bootstrap](https://img.shields.io/badge/-Bootstrap-black?style=flat-square&logo=bootstrap) **Bootstrap :** Framework CSS pour le développement web responsive.
 
 ### Autres Outils :
 
-- ![ReportLab Logo](images/reportlab_logo.png) **ReportLab :** Pour la génération de rapports PDF.
-- **Pandas :** Pour la manipulation et l'analyse des données.
+- ![ReportLab](https://img.shields.io/badge/-ReportLab-black?style=flat-square&logo=python) **ReportLab :** Pour la génération de rapports PDF.
+- ![Pandas](https://img.shields.io/badge/-Pandas-black?style=flat-square&logo=pandas) **Pandas :** Pour la manipulation et l'analyse des données.
+
+### Langages et Technologies Supplémentaires :
+
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript) **JavaScript :** Langage de programmation côté client pour les fonctionnalités interactives.
+- ![Bootstrap](https://img.shields.io/badge/-Bootstrap-black?style=flat-square&logo=bootstrap) **Bootstrap :** Framework CSS pour le développement web responsive.
 
 ## Installation
 
