@@ -69,3 +69,20 @@ L'objectif principal de ce projet est de développer un modèle de prédiction p
    ```sh
    git clone  https://github.com/SARSARI1/PhosPridectAI_ML.git
    cd PhosPridectAI_ML
+2. **Créer et activer un environnement virtuel :**
+   ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+
+3. **Installer les dépendances :**
+   ```sh
+    pip install -r requirements.txt
+4. **Configurer la base de données :**
+   ```sh
+    flask db init
+    flask db migrate
+    flask db upgrade
+5. **Lancer l'application :**
+    ```sh
+    flask run
+
