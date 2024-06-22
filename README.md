@@ -67,5 +67,5 @@ L'objectif principal de ce projet est de développer un modèle de prédiction p
 
 1. **Cloner le dépôt :**
    ```sh
-   git clone https://github.com/votre-utilisateur/ocp-prediction-platform.git
-   cd ocp-prediction-platform
+   git clone  https://github.com/SARSARI1/PhosPridectAI_ML.git
+   cd PhosPridectAI_ML
