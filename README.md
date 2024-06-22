@@ -34,10 +34,11 @@ L'objectif principal de ce projet est de développer un modèle de prédiction p
 
 ### Backend :
 
-- ![Flask Logo](images/flask_logo.png) **Flask :** Framework web pour la création de l'interface utilisateur.
-- ![SQLAlchemy Logo](images/sqlalchemy_logo.png) **SQLAlchemy :** ORM pour la gestion des bases de données.
-- ![Pickle Logo](images/pickle_logo.png) **Pickle :** Pour le chargement des modèles de Machine Learning.
-- ![Scikit-learn Logo](images/scikit_learn_logo.png) **Scikit-learn :** Bibliothèque de Machine Learning utilisée pour la construction des modèles.
+- [![Flask Logo](https://www.fullstackpython.com/img/logos/flask.jpg)](https://flask.palletsprojects.com/) **Flask :** Framework web pour la création de l'interface utilisateur.
+- [![SQLAlchemy Logo](https://www.fullstackpython.com/img/logos/sqlalchemy.jpg)](https://www.sqlalchemy.org/) **SQLAlchemy :** ORM pour la gestion des bases de données.
+- [![Pickle Logo](https://upload.wikimedia.org/wikipedia/commons/4/4f/Pickle_logo.jpg)](https://docs.python.org/3/library/pickle.html) **Pickle :** Pour le chargement des modèles de Machine Learning.
+- [![Scikit-learn Logo](https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png)](https://scikit-learn.org/stable/) **Scikit-learn :** Bibliothèque de Machine Learning utilisée pour la construction des modèles.
+
 
 ### Frontend :
 
