@@ -8,7 +8,7 @@
 
 Ce projet vise à développer une plateforme de prédiction du chiffre d'affaires pour l'Office Chérifien des Phosphates (OCP) en utilisant des techniques de Machine Learning.
 
-![PhosPridectAI Logo](static/images/clients/guitar-center.png)
+
 
 La plateforme inclut une interface web interactive développée avec Flask, permettant aux utilisateurs d'interagir avec les résultats de prédiction.
 
@@ -63,6 +63,7 @@ L'objectif principal de ce projet est de développer un modèle de prédiction p
 - ![Bootstrap](https://img.shields.io/badge/-Bootstrap-black?style=flat-square&logo=bootstrap) **Bootstrap :** Framework CSS pour le développement web responsive.
 
 ## Installation
+![PhosPridectAI Logo](static/images/clients/guitar-center.png)
 
 1. **Cloner le dépôt :**
    ```sh
