@@ -1,0 +1,310 @@
+{% extends 'base.html' %}
+
+
+{% block title %} PREDICT_turnover💲{% endblock %}
+
+{% block content %}
+
+        
+
+        <main>
+
+            <section >
+                <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                    <a href="{{url_for('home')}}">
+                        <img src="{{url_for('static', filename='images/happy-bearded-young-man.png')}}" class="avatar-image img-fluid" alt="">
+                    </a>
+        
+                    <h2 class="text-white ms-4 mb-0">Predicte price & production quantity of phosphate 💹 </h2>
+        
+                </div>
+                
+             </section> 
+
+             <div  class="about-thumb" class="col-lg-10 col-12 mx-auto">
+                <p id="prediction_parag">
+                     📌📌Please provide the required input to predict the phosphate price. </br>✅ Fill in the necessary information in the form to proceed with the prediction. 
+                </p>
+            </div>
+
+           
+            <section class="featured section-padding" id="prediction_quantity" >
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12">
+
+
+                            
+
+                            <div class="profile-thumb">
+                                <div class="profile-title">
+                                    <h4 class="mb-0">Phosphate production quantity & price  :</h4>
+                                </div>
+
+                               
+                                <div class="profile-body">
+                                    <form action="{{ url_for('make_predictions_turnover') }}" method="post" class="custom-form contact-form" role="form" >
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="form-floating">
+                                                    
+                                                    <select id="country_turnover" name="country" class="form-control" required>
+                                                        <option value="0">Afghanistan</option>
+                                                        <option value="1">Albania</option>
+                                                        <option value="2">Algeria</option>
+                                                        <option value="3">Angola</option>
+                                                        <option value="4">Argentina</option>
+                                                        <option value="5">Armenia</option>
+                                                        <option value="6">Australia</option>
+                                                        <option value="7">Azerbaijan</option>
+                                                        <option value="8">Bahamas</option>
+                                                        <option value="9">Bahrain</option>
+                                                        <option value="10">Bangladesh</option>
+                                                        <option value="11">Belarus</option>
+                                                        <option value="12">Belgium</option>
+                                                        <option value="13">Belize</option>
+                                                        <option value="14">Benin</option>
+                                                        <option value="15">Bhutan</option>
+                                                        <option value="16">Bolivia</option>
+                                                        <option value="17">Bosnia and Herzegovina</option>
+                                                        <option value="18">Botswana</option>
+                                                        <option value="19">Brazil</option>
+                                                        <option value="20">Brunei</option>
+                                                        <option value="21">Bulgaria</option>
+                                                        <option value="22">Burkina Faso</option>
+                                                        <option value="23">Burundi</option>
+                                                        <option value="24">Cambodia</option>
+                                                        <option value="25">Cameroon</option>
+                                                        <option value="26">Canada</option>
+                                                        <option value="27">Central African Republic</option>
+                                                        <option value="28">Chile</option>
+                                                        <option value="29">China</option>
+                                                        <option value="30">Colombia</option>
+                                                        <option value="31">Congo</option>
+                                                        <option value="32">Costa Rica</option>
+                                                        <option value="33">Croatia</option>
+                                                        <option value="34">Cuba</option>
+                                                        <option value="35">Cyprus</option>
+                                                        <option value="36">Czechia</option>
+                                                        <option value="37">Democratic Republic of Congo</option>
+                                                        <option value="38">Denmark</option>
+                                                        <option value="39">Dominican Republic</option>
+                                                        <option value="40">Ecuador</option>
+                                                        <option value="41">Egypt</option>
+                                                        <option value="42">El Salvador</option>
+                                                        <option value="43">Eritrea</option>
+                                                        <option value="44">Estonia</option>
+                                                        <option value="45">Ethiopia</option>
+                                                        <option value="46">Fiji</option>
+                                                        <option value="47">Finland</option>
+                                                        <option value="48">France</option>
+                                                        <option value="49">Gabon</option>
+                                                        <option value="50">Gambia</option>
+                                                        <option value="51">Georgia</option>
+                                                        <option value="52">Germany</option>
+                                                        <option value="53">Ghana</option>
+                                                        <option value="54">Greece</option>
+                                                        <option value="55">Guatemala</option>
+                                                        <option value="56">Guinea</option>
+                                                        <option value="57">Guyana</option>
+                                                        <option value="58">Honduras</option>
+                                                        <option value="59">Hungary</option>
+                                                        <option value="60">Iceland</option>
+                                                        <option value="61">India</option>
+                                                        <option value="62">Indonesia</option>
+                                                        <option value="63">Iran</option>
+                                                        <option value="64">Iraq</option>
+                                                        <option value="65">Ireland</option>
+                                                        <option value="66">Israel</option>
+                                                        <option value="67">Italy</option>
+                                                        <option value="68">Jamaica</option>
+                                                        <option value="69">Japan</option>
+                                                        <option value="70">Jordan</option>
+                                                        <option value="71">Kazakhstan</option>
+                                                        <option value="72">Kenya</option>
+                                                        <option value="73">Kuwait</option>
+                                                        <option value="74">Kyrgyzstan</option>
+                                                        <option value="75">Latvia</option>
+                                                        <option value="76">Lebanon</option>
+                                                        <option value="77">Libya</option>
+                                                        <option value="78">Lithuania</option>
+                                                        <option value="79">Luxembourg</option>
+                                                        <option value="80">Madagascar</option>
+                                                        <option value="81">Malawi</option>
+                                                        <option value="82">Malaysia</option>
+                                                        <option value="83">Mali</option>
+                                                        <option value="84">Malta</option>
+                                                        <option value="85">Mauritius</option>
+                                                        <option value="86">Mexico</option>
+                                                        <option value="87">Moldova</option>
+                                                        <option value="88">Mongolia</option>
+                                                        <option value="89">Montenegro</option>
+                                                        <option value="90">Morocco</option>
+                                                        <option value="91">Mozambique</option>
+                                                        <option value="92">Myanmar</option>
+                                                        <option value="93">Namibia</option>
+                                                        <option value="94">Nepal</option>
+                                                        <option value="95">Netherlands</option>
+                                                        <option value="96">New Caledonia</option>
+                                                        <option value="97">New Zealand</option>
+                                                        <option value="98">Nicaragua</option>
+                                                        <option value="99">Niger</option>
+                                                        <option value="100">Nigeria</option>
+                                                        <option value="101">North Korea</option>
+                                                        <option value="102">North Macedonia</option>
+                                                        <option value="103">Norway</option>
+                                                        <option value="104">Oman</option>
+                                                        <option value="105">Pakistan</option>
+                                                        <option value="106">Panama</option>
+                                                        <option value="107">Papua New Guinea</option>
+                                                        <option value="108">Paraguay</option>
+                                                        <option value="109">Peru</option>
+                                                        <option value="110">Philippines</option>
+                                                        <option value="111">Poland</option>
+                                                        <option value="112">Portugal</option>
+                                                        <option value="113">Qatar</option>
+                                                        <option value="114">Romania</option>
+                                                        <option value="115">Russia</option>
+                                                        <option value="116">Rwanda</option>
+                                                        <option value="117">Saudi Arabia</option>
+                                                        <option value="118">Senegal</option>
+                                                        <option value="119">Serbia</option>
+                                                        <option value="120">Serbia and Montenegro</option>
+                                                        <option value="121">Slovakia</option>
+                                                        <option value="122">Slovenia</option>
+                                                        <option value="123">South Africa</option>
+                                                        <option value="124">South Korea</option>
+                                                        <option value="125">Spain</option>
+                                                        <option value="126">Sri Lanka</option>
+                                                        <option value="127">Sudan</option>
+                                                        <option value="128">Suriname</option>
+                                                        <option value="129">Sweden</option>
+                                                        <option value="130">Switzerland</option>
+                                                        <option value="131">Syria</option>
+                                                        <option value="132">Taiwan</option>
+                                                        <option value="133">Tajikistan</option>
+                                                        <option value="134">Tanzania</option>
+                                                        <option value="135">Thailand</option>
+                                                        <option value="136">Togo</option>
+                                                        <option value="137">Trinidad and Tobago</option>
+                                                        <option value="138">Tunisia</option>
+                                                        <option value="139">Turkey</option>
+                                                        <option value="140">Turkmenistan</option>
+                                                        <option value="141">Uganda</option>
+                                                        <option value="142">Ukraine</option>
+                                                        <option value="143">United Arab Emirates</option>
+                                                        <option value="144">United Kingdom</option>
+                                                        <option value="145">United States</option>
+                                                        <option value="146">Uruguay</option>
+                                                        <option value="147">Uzbekistan</option>
+                                                        <option value="148">Venezuela</option>
+                                                        <option value="149">Vietnam</option>
+                                                        <option value="150">World</option>
+                                                        <option value="151">Yemen</option>
+                                                        <option value="152">Zambia</option>
+                                                        <option value="153">Zimbabwe</option>
+
+                                                    </select>
+                                                    
+
+                                
+                                
+                                                    <label for="floatingInput">Select a country :</label>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                    
+                                                    <input type="number" id="year_turnover" name="year" min="1900" max="2099" class="form-control" required>
+                                                    <label for="floatingInput">Enter a Year:</label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                    
+                                                    <input type="number" id="Nutrient" name="Nutrient_potash" step="any" class="form-control" required>
+                                                    <label for="floatingInput">Enter Nutrient potash production quantity (tonnes):</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                    
+                                                    <input type="number" id="Nutrient_nitrogen_turnover" name="Nutrient_nitrogen" step="any"  class="form-control" required>
+                                                    <label for="floatingInput">Enter Nutrient nitrogen production quantity (tonnes):</label>
+                                                </div>
+                                            </div>
+                                            
+                                
+                
+
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                    
+                                                    <select name="month"  class="form-control">
+                                                        <option value="1">January</option>
+                                                        <option value="2">February</option>
+                                                        <option value="3">March</option>
+                                                        <option value="4">April</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">June</option>
+                                                        <option value="7">July</option>
+                                                        <option value="8">August</option>
+                                                        <option value="9">September</option>
+                                                        <option value="10">October</option>
+                                                        <option value="11">November</option>
+                                                        <option value="12">December</option>
+                                                    </select>
+                                                    
+                                                    <label for="floatingInput">Enter a Month:</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                    
+                                                    <input type="number" id="Diesel_turnover" name="Diesel" step="any" class="form-control" required>
+                                                    <label for="floatingInput">Enter the Diesel Price (Dollars US par gallon):</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                    
+                                                    <input type="number" id="Diesel_ROC_turnover" name="Diesel_ROC" step="any" class="form-control" required>
+                                                    <label for="floatingInput">Enter the Diesel ROC :</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12"> 
+                                                <div class="form-floating">
+                                                    <input type="number" id="Phosphate_Diesel_Price_Ratio_turnover" name="Phosphate_Diesel_Price_Ratio"  step="any" class="form-control" required>
+                                                    <label for="floatingInput">Enter the Phosphate/Diesel Price Ratio :</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-12 ms-auto">
+                                                <button type="submit" class="form-control" id="sbtn">Go✅</button>
+                                            </div>
+                                
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+			</section>
+        </main>
+
+        {% endblock %}

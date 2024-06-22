@@ -1,0 +1,132 @@
+<!-- result.html -->
+{% extends 'base.html' %}
+
+
+{% block title %} Predictions {% endblock %}
+
+{% block content %}
+<main>
+
+            
+     <section >
+        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+            <a href="{{url_for('home')}}">
+                <img src="{{url_for('static', filename='images/happy-bearded-young-man.png')}}" class="avatar-image img-fluid" alt="">
+            </a>
+
+            <h2 class="text-white ms-4 mb-0">Make Predictions 👩‍💻 </h2></h2>
+
+        </div>
+        
+     </section>   
+          
+     <div  class="about-thumb" class="col-lg-10 col-12 mx-auto">
+        <p id="prediction_parag">
+            Welcome to our PHOS-PREDICT-AI application 🤓!</br> Our platform offers you three distinct choices tailored to your needs 🤗. </br>
+        </p>
+    </div> 
+
+
+    <section class="services section-padding" id="section_3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-10 col-12 mx-auto">
+                    
+                    <div class="row pt-lg-5">
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb">
+                                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                    <h3 class="mb-0">Phosphate price</h3>
+
+                                    <div class="services-price-wrap ms-auto">
+                                        <p class="services-price-text mb-0">#1 </p>
+                                        <div class="services-price-overlay"></div>
+                                    </div>
+                                </div>
+
+                                <p>You can seamlessly predict the future trends in phosphate price 💲</p>
+
+                                <a href="{{ url_for('price') }}" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
+
+                                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                    <i class="services-icon bi-currency-dollar"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb services-thumb-up">
+                                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                    <h3 class="mb-0">Phosphate production quantity</h3>
+
+                                    <div class="services-price-wrap ms-auto">
+                                        <p class="services-price-text mb-0">#2</p>
+                                        <div class="services-price-overlay"></div>
+                                    </div>
+                                </div>
+
+                                <p>Estimate phosphate production quantities 🌱.</p>
+
+                                <a href="{{ url_for('quantity') }}" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
+
+                                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                    <i class="services-icon bi-bar-chart"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb">
+                                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                    <h3 class="mb-0">Turnover prediction </h3>
+
+                                    <div class="services-price-wrap ms-auto">
+                                        <p class="services-price-text mb-0">#3 </p>
+                                        <div class="services-price-overlay"></div>
+                                    </div>
+                                </div>
+
+                                <p>Project the annual turnover for a specific year 😉.</p>
+
+                                <a href="{{ url_for('turnover') }}" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
+
+                                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                    
+                                        <i class="services-icon bi bi-arrow-up-circle"></i>
+                                    
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div  class="about-thumb" class="col-lg-10 col-12 mx-auto">
+            <p id="prediction_parag">
+                Whether you're an industry expert or simply curious about the phosphate sector, our app empowers you with the information you seek 😃.</br> Explore the options and discover the insights that matter most to you ✅!
+            </p>
+        </div>
+    </section>
+    
+   
+    
+    
+    
+</main>
+
+{% endblock %}
+
+
+    

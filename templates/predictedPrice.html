@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Price💲{% endblock %}
+
+{% block content %}
+
+        
+
+        <main>
+
+            <section >
+                <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                    <a href="{{url_for('home')}}">
+                        <img src="{{url_for('static', filename='images/happy-bearded-young-man.png')}}" class="avatar-image img-fluid" alt="">
+                    </a>
+                    
+        
+                    <h2 class="text-white ms-4 mb-0">Predicted phosphate price 💰 </h2>
+        
+                </div>
+                
+             </section> 
+
+             <div  class="about-thumb" class="col-lg-10 col-12 mx-auto">
+                <p id="prediction_parag">
+                    Here are the results based on your inputs , check it out ⬇️⬇️. 
+                </p>
+            </div>
+
+           
+            <section class="featured section-padding" id="predection_price" >
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 mt-5 mt-lg-0">
+                            <div class="about-thumb">
+                                <div class="row">
+                                    <div class="col-lg-6 col-6 featured-border-bottom py-2">
+                                        
+
+                                        <p class="featured-text">Predicted Phosphate Price for {{ session["month"]}}  {{session["year1"]}}  in $: </p>
+                                        <strong class="featured-numbers">{{ session["phosphate_price"]}}</strong>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        {% endblock %}
